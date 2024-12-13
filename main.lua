@@ -2,6 +2,7 @@ local githubURL = "https://raw.githubusercontent.com/yuqav/Laze-Hub/refs/heads/m
 
 local scripts = {
  [116605585218149] = "gofishing.lua"
+ [74246110095587] = "slidefly.lua"
 }
 
 local placeId = game.PlaceId
