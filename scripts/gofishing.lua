@@ -1,6 +1,8 @@
 local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/yuqav/Laze-Hub/refs/heads/main/ui.lua'))()
 local window = lib.createWindow("Laze", "Laze - Go Fishing", true)
-local tab1 = window.createTab("Main")
+
+local tab1 = window.createTab("Function")
+local tab2 = window.createTab("Teleport")
 
 local antiAfk = false
 local player = game.Players.LocalPlayer
@@ -28,7 +30,7 @@ tab1.createToggle("Anti Afk", false, function(v)
     end
 end)
 
-tab1.createDropdown("Teleport to", {"Default Isle", "Vulcano Isle", "Snowy Biome", "Deep Waters", "Ancient Ocean", "High Field", "Toxic Zone"}, "Default Isle", function(v)
+tab2.createDropdown("Teleport to", {"Default Isle", "Vulcano Isle", "Snowy Biome", "Deep Waters", "Ancient Ocean", "High Field", "Toxic Zone"}, "Default Isle", function(v)
     if v == "Default Isle" then
         player.Character:SetPrimaryPartCFrame(CFrame.new(779, 125, -216))
     elseif v == "Vulcano Isle" then
