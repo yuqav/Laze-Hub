@@ -1,4 +1,4 @@
-local ver = "1.0"
+local ver = "1.1"
 
 local lib = {}
 
@@ -47,7 +47,7 @@ lib.createWindow = function(name, title, draggable)
 		local tweenservice = game:GetService("TweenService")
 		local info = TweenInfo.new(.3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, 0, false, 0)
 		local unselected = {
-			TextColor3 = Color3.fromRGB(190, 190, 190)
+			TextColor3 = Color3.fromRGB(240, 240, 240)
 		}
 		local hover = {
 			TextColor3 = Color3.fromRGB(235, 235, 235)
@@ -132,7 +132,7 @@ lib.createWindow = function(name, title, draggable)
 	RoundEdge.Position = UDim2.new(-0.051, 0, -0.001, 0)
 	RoundEdge.Size = UDim2.new(0, 15, 0, 324)
 
-	UICorner.CornerRadius = UDim.new(0, 10)
+	UICorner.CornerRadius = UDim.new(0, 1)
 	UICorner.Parent = RoundEdge
 
 	TabList.Name = "TabList"
@@ -172,7 +172,7 @@ lib.createWindow = function(name, title, draggable)
 
 	Main.Name = "Main"
 	Main.Parent = MainFrame
-	Main.BackgroundColor3 = Color3.fromRGB(63, 62, 71)
+	Main.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
 	Main.BorderSizePixel = 0
 	Main.Position = UDim2.new(0.293, 0, -0.002, 0)
 	Main.Size = UDim2.new(0, 389, 0, 324)
@@ -299,7 +299,7 @@ lib.createWindow = function(name, title, draggable)
 			Popup:Destroy()
 		end)
 
-		UICorner_9.CornerRadius = UDim.new(0, 5)
+		UICorner_9.CornerRadius = UDim.new(0, 1)
 		UICorner_9.Parent = Close
 
 		Tween(Popup, {BackgroundTransparency = 0.5})
@@ -389,12 +389,12 @@ lib.createWindow = function(name, title, draggable)
 
 			Text.Name = text
 			Text.Parent = TabMain
-			Text.BackgroundColor3 = Color3.fromRGB(50, 44, 53)
+			Text.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
 			Text.BorderSizePixel = 0
 			Text.Size = UDim2.new(0, 382, 0, 29)
 			Text.Font = Enum.Font.Gotham
 			Text.Text = text
-			Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Text.TextColor3 = Color3.fromRGB(240, 240, 240)
 			Text.TextSize = 14.000
 
 			TextUICorner.CornerRadius = UDim.new(0, 5)
